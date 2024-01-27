@@ -454,7 +454,7 @@ footer {
 
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
     .main-container {
         flex-wrap: wrap; 
         flex-shrink: 1;
