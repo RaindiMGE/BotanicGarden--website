@@ -1,0 +1,575 @@
+/* || General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-width {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/* || Typography */
+
+h1 {
+    font-size: 57px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p, span, a, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* || body */
+
+
+.main-container {
+    align-items: center;
+    padding-top: 14px;
+}
+
+/* header */
+
+
+header {
+    justify-content: space-between;
+}
+
+.header__logo-box {
+    gap: 14px;
+}
+
+.header__logo-box > div {
+    gap: 4px;
+}
+
+.header__logo-box p {
+    color: #343D33;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+}
+
+.header__logo-box span {
+    font-size: 15px;
+    color: #333333;
+    font-style: italic;
+}
+
+nav img {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    all: unset;
+    color: #475F45;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.header__nav-li {
+    padding: 15px 30px;
+    border: 2px solid #475F45;
+}
+
+
+
+/* main */
+
+/* article */
+
+article {
+    padding: 60px 0 96px 0;
+    align-items: center;
+}
+
+
+.hiro__container {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 115px;
+}
+
+.hiro__text {
+    width: 528px;
+    gap: 32px;
+}
+
+.hiro__heading {
+    gap: 16px;
+}
+
+.hiro__heading h1 {
+    text-transform: capitalize;
+}
+
+.hiro__heading p {
+    color: #414840;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.hiro__buttons {
+    gap: 16px;
+}
+
+.hiro__buttons button {
+    border: 0;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.hiro__button--green {
+    color: #fff;
+    background-color: #475F45;
+}
+
+.hiro__buttons .hiro__button--white {
+    border: 3px solid #475F45;
+    color: #475F45;
+    background-color: #fff;
+}
+
+
+
+.discover__container {
+    padding: 96px 100px;
+    max-width: 1400px;
+    width: 100%;
+    background-color: #343D33;
+    background-image: url("botanic-garden-image/white-leaf.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    justify-content: flex-end;
+}
+
+.discover__container > div{
+    gap: 84px;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.discover__text {
+    gap: 32px;
+    color: #fff;
+    width: 418px;
+}
+
+.discover__text > div {
+    gap: 16px;
+}
+
+.discover__text h2 {
+font-size: 45px;
+font-weight: 400;
+line-height: 110%;
+text-transform: capitalize;
+}
+
+.discover__text p {
+    font-size: 20px;
+    line-height: 150%; /* 30px */
+}
+
+.discover__button {
+    max-width: 186px;
+    background-color: unset;
+    padding: 20px 36px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+
+
+.posts__heading {
+    gap: 20px;
+    width: 390px;
+}
+
+.posts__heading > div {
+    gap: 20px;
+}
+
+.posts__button {
+    gap: 12px;
+    color: #475F45;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.posts__container {
+    align-items: flex-start;
+    padding: 96px 100px 0 100px;
+    max-width: 1400px;
+    width: 100%;
+    background-image: url("botanic-garden-image/grey-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: top -190px right;
+    justify-content: center;
+}
+
+.posts__container > div {
+    gap: 48px;
+}
+
+.posts__post-boxes {
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.posts__plants-box {
+    width: 520px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.posts__plants-box > div {
+    gap: 12px;
+    padding: 0 24px;
+}
+
+.posts__plants-box h3 {
+    color: #475F45;
+    line-height: 110%;
+}
+
+.posts__plants-box span {
+    color: #343D33;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 150%;
+}
+
+.posts__plants-box p {
+    color: var(--text-body-copy, #414840);
+    line-height: 150%;
+}
+
+.posts__left-post-box {
+    width: 630px;
+    padding-bottom: 0;
+}
+
+.posts__left-post-box > div {
+    padding: 0;
+}
+
+.posts__left-post-box p {
+    height: auto;
+}
+
+.posts__left-post-boxes {
+    gap: 12px;
+}
+
+
+
+
+/* footer */
+
+
+footer {
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    background-color: #414840;
+    color: #fff;
+    padding-top: 48px;
+}
+
+.footer__text-container {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.footer__logo-box {
+    gap: 20px;
+    width: 270px;
+    line-height: 150%;
+}
+
+.footer__logo-box img {
+    width: 220px;
+}
+
+.footer__list {
+    gap: 20px;
+}
+
+.footer__list a {
+    color: unset;
+    text-decoration: unset;
+}
+
+.footer__list ul {
+    gap: 10px;
+    list-style: none;
+}
+
+.footer__socials {
+    gap: 20px;
+}
+
+.footer__socials > div {
+    gap: 32px;
+}
+
+.footer__copywriting-box {
+    max-width: 1400px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #343D33;
+    text-align: center;
+}
+
+
+
+/* media */
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .main-container {
+        flex-wrap: wrap; 
+        flex-shrink: 1;
+        justify-content: center;
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 45px;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav img {
+        all: unset;
+    }
+
+    .box-width {
+        max-width: 768px;
+    }
+
+    .hiro__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        text-align: center;
+    }
+
+    .hiro__buttons {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .discover__container {
+        background-position: bottom right;
+    }
+
+    .discover__container > div {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    .discover__plant, .discover__seating-area {
+        max-width: 810px;
+        width: 100%;
+    }
+
+    .discover__order {
+        order: 3;
+    }
+
+    .posts__right-plants-box {
+        flex-direction: row;
+        max-width: 976px;
+        width: 100%;
+    }
+
+    .posts__right-plants-box > div {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+    .posts__right-plants-box img {
+        width: 360px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 765px) {
+    .main-container {
+        flex-wrap: wrap; 
+        flex-shrink: 1;
+        justify-content: center;
+        width: 765px;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 35px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav img {
+        all: unset;
+    }
+
+    .box-width {
+        max-width: 768px;
+    }
+
+    .hiro__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+        text-align: center;
+    }
+
+    .hiro__buttons {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .discover__container {
+        background-position: bottom right;
+    }
+
+    .discover__container > div {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .discover__text {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .discover__text p {
+        line-height: 150%;
+    }
+
+    .discover__button {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .discover__plant, .discover__seating-area {
+        max-width: 810px;
+        width: 100%;
+    }
+
+    .discover__order {
+        order: 3;
+    }
+
+    .posts__right-plants-box {
+        max-width: 976px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .posts__left-post-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .posts__left-post-box p {
+        width: 344px;
+    }
+
+    .posts__right-plants-box > div {
+        max-width: 280px;
+        width: 100%;
+        height: auto;
+    }
+
+    .posts__right-plants-box img {
+        width: 360px;
+    }
+
+    footer {
+        max-width: 765px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__text-container {
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .footer__logo-box {
+        width: auto;
+        margin: 0 auto;
+    }
+
+}
